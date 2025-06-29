@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    vertical-align: center;
+    background-image: radial-gradient(circle, rgb(75, 75, 75), rgb(25, 25, 25));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    background: transparent;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    transition: scale 0.15s ease;
+}
+
+img:hover {
+    scale: 1.2;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container-r {
+    position: relative;
+    display: inline-block;
+}
+
+.img-info {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 3px solid #FFFFFF;
+    z-index: 1;
+    width: 0; /* Initial width set to 0 */
+    opacity: 0; /* Initial opacity set to 0 */
+    text-align: left;
+    transition: width 0.5s ease; /* Transition for width and opacity */
+    overflow: hidden; /* Hide content that overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+
+    background-image: linear-gradient(rgb(75, 75, 75), rgb(50, 50, 50));
+}
+
+.img-container:hover .img-info {
+    display: block;
+    width: 25vw; /* Expand to the desired width on hover */
+    opacity: 1; /* Fade in on hover */
+    height: 35vh;
+}
+
+.img-info-r {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 3px solid #FFFFFF;
+    z-index: 1;
+    width: 0; /* Initial width set to 0 */
+    opacity: 0; /* Initial opacity set to 0 */
+    text-align: left;
+    transition: width 0.5s ease; /* Transition for width and opacity */
+    overflow: hidden; /* Hide content that overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+
+    background-image: linear-gradient(rgb(75, 75, 75), rgb(50, 50, 50));
+}
+
+.img-container-r:hover .img-info-r {
+    display: block;
+    width: 25vw; /* Expand to the desired width on hover */
+    opacity: 1; /* Fade in on hover */
+    height: 35vh;
+}
+
+td {
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
